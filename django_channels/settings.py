@@ -131,3 +131,8 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+try:
+    from .localsettings import *
+except ImportError:
+    pass
